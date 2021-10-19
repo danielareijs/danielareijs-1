@@ -55,6 +55,7 @@
     .menu-icon {
         display: flex;
         padding: 5px;
+        margin-right: -20px;
         border-radius: 50%;
         font-size: 30px;
         z-index: 10;

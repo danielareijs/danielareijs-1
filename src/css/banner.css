@@ -1,56 +1,57 @@
 .banner {
-    background: var(--background-2);
-      height: 800px;
-      position: relative;
-  }
+  background: var(--background-2);
+  height: 800px;
+  position: relative;
+}
+
+.banner-info{
+  margin: 100px auto;
+  width: 80%;
+}
+
+.banner h1 {
+  /* font-size: 70px; */
+  margin: 0;
+  line-height: 100%; 
+}
+
+.banner h2 {
+  /* font-size: 30px; */
+  margin: 10px;
+}
+
+.banner .social-media {
+  margin: 30px 0;
+  margin-top: 60px;
+}
+
+.banner .social-media a{
+  padding: 8px 10px;
+  margin: 5px;
+  font-size: 14px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  color: white;
+  box-shadow: 3px 3px 6px rgb(200,200,200)
+}
   
-  .banner-info{
-      margin: 100px auto;
-      width: 80%;
+.banner .social-media a:hover[style] {
+  border: 1px solid rgb(200,200,200)!important;
+  box-shadow: 0px 0px 6px rgb(200,200,200)
+}
+
+
+@media only screen and (max-width: 768px){
+  .banner-info {
+    margin-top: 120px;
   }
-  
-  .banner h1 {
-      font-size: 70px;
-      margin: 0;
-      line-height: 100%; 
-  }
-  
   .banner h2 {
-      font-size: 30px;
-      margin: 10px;
+    /* font-size: 24px; */
   }
-  
-  .banner .social-media {
-      margin: 30px 0;
+}
+
+@media only screen and (max-width: 600px){
+  .banner-info {
+    margin-top: 50px;
   }
-  
-  .banner .social-media a{
-      padding: 8px 10px;
-      margin: 5px;
-      font-size: 14px;
-      border-radius: 50%;
-      border: 1px solid gray;
-      color: white;
-      box-shadow: 3px 3px 6px rgb(200,200,200)
-  }
-  
-  .banner .social-media a:hover[style] {
-      border: 1px solid rgb(200,200,200)!important;
-      box-shadow: 0px 0px 6px rgb(200,200,200)
-  }
-  
-  
-  @media only screen and (max-width: 768px){
-    .banner-info {
-      margin-top: 120px;
-    }
-    .banner h2 {
-      font-size: 24px;
-    }
-  }
-  
-  @media only screen and (max-width: 600px){
-    .banner-info {
-      margin-top: 70px;
-    }
-  }
+}

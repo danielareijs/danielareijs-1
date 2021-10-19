@@ -3,7 +3,7 @@ import '../css/card.css'
 
 const Card = ({project}) => {
     return (
-        <div className="card"> 
+        <div className="card" > 
             <img src={project.image} />
             <div className="card-info">
                 <div>
