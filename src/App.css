@@ -2,3 +2,33 @@
   text-align: center;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,500&display=swap');
+:root {
+  --headings-color: #557571;
+  --text-color: #435b58;
+  --button-color: #D49A89;
+  --background-1: #F4F4F4;
+  --background-2: #f7f2ee;
+  --details: #F7D1BA;
+}
+
+body {
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Poppins", sans-serif;
+  color: var(--headings-color);
+  font-weight: 400;
+}
+
+h3 {
+  margin: 40px;
+  font-size: 50px;
+  margin: 70px;
+}
+
+p {
+  color: var(--text-color);
+  font-family: 'Open Sans',sans-serif;
+}
