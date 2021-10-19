@@ -1,0 +1,103 @@
+.card {
+    box-shadow: 0 5px 30px rgb(200,200,200);
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-info {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-info:hover {
+    background: white;
+    opacity: 1;
+    animation-name: transitionIn;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+}
+
+.card-info h4, p, li {
+    padding: 0;
+    margin: 0;
+}
+
+.card-info h4 {
+    font-size: 3vw;
+    margin: 30px 0 15px 0;
+}
+
+.card-info p {
+    margin: 0 30px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card li {
+    display: inline;
+    padding: 8px;
+    color: var(--button-color);
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 992px){
+    .card {
+        width: 100%;
+        grid-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .card {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .card-info h4 {
+        font-size: 5vw;
+    }
+
+    .card-info p {
+        font-size: 3vw;
+        margin: 10px 50px;
+    }
+}
+  
+@media (max-width: 992px) and (min-width:768px){
+  
+    .card-info .outline-btn {
+      font-size: 14px;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .card p, .card li {
+        font-size: 14px;
+
+    }
+  }
+
+  @keyframes transitionIn {
+    0% {
+      opacity: 0;
+    }
+    70%{
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
